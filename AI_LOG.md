@@ -2,7 +2,7 @@
 
 ## Utilisation de l'assistance IA
 
-Le projet a été réalisé en binôme. Les deux membres ont participé à la réflexion, aux décisions et à l'avancement du projet. L'assistance IA a été utilisée comme outil complémentaire.
+Le projet a été réalisé en binôme. Les membres ont participé à la réflexion, aux décisions et à l'avancement du projet. L'assistance IA a été utilisée comme outil complémentaire.
 
 ### Tâche 1 – Compréhension des consignes et des notions
 - **Outil :** ChatGPT
