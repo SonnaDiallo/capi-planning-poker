@@ -1,18 +1,31 @@
+
 def verifier_tour(votes, tour, regle):
+    nb = sum(1 for v in votes if v == "cafe")
+
+    # Si un seul joueur choisit cafe, on reprend
+    if nb == 1:
+        return {"valide": False, "action": "reprendre"}
+
     if not votes:
         return {"valide": False, "action": "revote"}
 
-    if sum(1 for v in votes if v == "cafe") == 1:
-        return {"valide": False, "action": "reprendre"}
+    vote = votes[0]
+    pareil = all(v == vote for v in votes)
 
-    premier = votes[0]
-    identiques = all(v == premier for v in votes)
-
-    if tour == 1 or (tour == 2 and regle == "stricte"):
+    # Tour 1 : tout le monde doit etre d'accord
+    if tour == 1:
         return {
-            "valide": identiques,
-            "valeur": premier if identiques else None,
-            "action": "valide" if identiques else "revote",
+            "valide": pareil,
+            "valeur": vote if pareil else None,
+            "action": "valide" if pareil else "revote",
+        }
+
+    # Tour 2 : regle stricte
+    if tour == 2 and regle == "stricte":
+        return {
+            "valide": pareil,
+            "valeur": vote if pareil else None,
+            "action": "valide" if pareil else "revote",
         }
 
     return {"valide": False, "action": "revote"}
