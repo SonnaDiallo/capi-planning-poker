@@ -27,3 +27,15 @@ Le projet a été réalisé en binôme. Les membres ont participé à la réflex
 - **Résultat :** [modifié au niveau de l'appel du fichier backlog.json au niveau de main.py ].
 - **Vérifié :** [lancement avec `python -m src.main`, 1 et 11 joueurs, pseudo vide, doublon, fichier inconnu, JSON cassé].
 - **Changé ou rejeté :** [ex. : espace corrigé dans le JSON, imports adaptés à notre arborescence].
+
+
+## Entrée 4 : CI GitHub Actions
+- **Demande :** fichier `ci.yml` (Claude).
+- **Résultat :** [accepté].
+- **Vérifié :** [run vert sur la PR #3, ce que fait chaque étape].
+
+## Entrée 5 : vote masqué et boucle sur le backlog (US-03)
+- **Demande :** code des fichiers `cards.py`, `game.py`, `console.py` et `main.py` (Claude).
+- **Résultat :** modifié : `getpass` remplacé par `input` et effacement de l'écran.
+- **Vérifié :** [votes identiques, café collectif, `?`, carte invalide, backlog complet de 3 fonctionnalités].
+- **Changé ou rejeté :** `getpass` rejeté, car il ne fonctionne pas dans notre terminal Git Bash.
