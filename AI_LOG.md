@@ -35,9 +35,9 @@ Le projet a été réalisé en binôme. Les membres ont participé à la réflex
 ### Tâche 5 – Mise en place de l'intégration continue
 
 - **Outil :** ChatGPT
-- **Utilisation :** Demande d'explications sur GitHub Actions et aide à la préparation du fichier de configuration `ci.yml`.
-- **Apport de l'IA :** Accompagnement dans la configuration du workflow et l'interprétation des résultats d'exécution.
-- **Travail du binôme :** Ajout du workflow dans `.github/workflows/ci.yml`, publication sur GitHub et vérification du résultat.
+- **Utilisation :** Demande d'explications sur GitHub Actions, préparation du fichier de configuration `ci.yml`, explications sur les commandes Git, les branches et les Pull Requests.
+- **Apport de l'IA :** Accompagnement dans la configuration du workflow, l'interprétation des résultats d'exécution et les étapes de gestion du dépôt.
+- **Travail du binôme :** Ajout du workflow dans `.github/workflows/ci.yml`, publication sur GitHub, vérification du résultat et travail collaboratif sur le projet.
 - **Résultat vérifié :** Le workflow « Tests Python » s'est exécuté avec succès sur GitHub Actions.
 
 ### Tâche 6 – Aide à la rédaction du R2
@@ -51,8 +51,19 @@ Le projet a été réalisé en binôme. Les membres ont participé à la réflex
 
 - **Demande :** Aide à la compréhension et à la mise en place du code de saisie du nombre de joueurs et des pseudos, ainsi que du chargement d'un backlog JSON, avec séparation `core` / `persistence` / `ui`.
 - **Résultat :** Le code a été adapté, notamment au niveau de l'appel du fichier `backlog.json` dans `main.py`.
-- **Vérifié :** À compléter avec les tests réellement effectués par le binôme.
-- **Changé ou rejeté :** Adaptation des chemins de fichiers et des imports à l'arborescence réelle du projet.
+- **Vérifié :** Lancement avec `python -m src.main`, 1 et 11 joueurs, pseudo vide, doublon, fichier inconnu, JSON cassé.
+- **Changé ou rejeté :** Adaptation des chemins de fichiers et des imports à l'arborescence réelle du projet (ex. : espace corrigé dans le JSON).
+
+## Entrée 4 : CI GitHub Actions
+- **Demande :** Fichier `ci.yml` (Claude).
+- **Résultat :** Accepté.
+- **Vérifié :** Run vert sur la PR #3, vérification de chaque étape.
+
+## Entrée 5 : Vote masqué et boucle sur le backlog (US-03)
+- **Demande :** Code des fichiers `cards.py`, `game.py`, `console.py` et `main.py` (Claude).
+- **Résultat :** Modifié : `getpass` remplacé par `input` et effacement de l'écran.
+- **Vérifié :** Votes identiques, café collectif, `?`, carte invalide, backlog complet de 3 fonctionnalités.
+- **Changé ou rejeté :** `getpass` rejeté, car il ne fonctionne pas dans notre terminal Git Bash.
 
 ## Limites de l'assistance IA
 
